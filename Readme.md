@@ -9,16 +9,17 @@
 3. [Lists](https://github.com/HimekoInaba/haskell-tutorial/blob/master/lists.hs)
 
 <h2 id="intro">Introduction</h2>
+
 ### What is Functional Programming?
- * Pure functions - aka mathematical functions, they can not have side effects.
- * Immutable data - values cannot be reassigned.
- * Declarative    - express the logic instead of control flow (for example, SQL is declarative). 
- * Easy to verify - you can mathematically prove the correctnes of an algorithm.
+ - Pure functions - aka mathematical functions, they can not have side effects.
+ - Immutable data - values cannot be reassigned.
+ - Declarative    - express the logic instead of control flow (for example, SQL is declarative). 
+ - Easy to verify - you can mathematically prove the correctnes of an algorithm.
 
 ### Declarative vs Imperative
 ***Imperative***
-Describe an algorithm how to sum an array. You give an instructions to machiene.
-***Java***
+Describe an algorithm how to sum an array. You give an instructions to machiene.  
+***Java***  
 ```java
 int sum (int[] arr) {
     int sum = 0;
@@ -30,8 +31,8 @@ int sum (int[] arr) {
 ```
 
 ***Declarative***
-Define what it means to have a sum.
-***Haskell***
+Define what it means to have a sum.  
+***Haskell***  
 ```haskell
 sum [] = 0
 sum (x:xs) = x + sum xs
@@ -42,7 +43,8 @@ Consider scenario: we have 3 functions: func1, func2, func3. Every functions nee
 Haskell is lazily evaluated.
 When variables are defined, they are not evaluated. They evaluates only when they are used.
 In the code below, only x or y is evaluated, depending on z, but never both.
-It means that our code will run in 2 hours.
+It means that our code will run in 2 hours.  
+***Haskell***  
 ```haskell
 evaluate arg =
     let x = func1 arg
@@ -54,7 +56,8 @@ evaluate arg =
 
 Strict evaluation
 Variables are evaluated immideatly. It means when we call func on an assigment, will hold evaluated value of the func.
-In our scenario, out code will run in 3 hours. Eventhough, we will use only x or y as a return value. 
+In our scenario, out code will run in 3 hours. Eventhough, we will use only x or y as a return value.  
+***Java***
 ```java
 int evaluate(int arg) {
     int x = func1(arg);
