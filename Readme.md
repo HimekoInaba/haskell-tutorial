@@ -17,7 +17,7 @@
  - Easy to verify - you can mathematically prove the correctnes of an algorithm.
 
 ### Declarative vs Imperative
-***Imperative***
+***Imperative***   
 Describe an algorithm how to sum an array. You give an instructions to machiene.  
 ***Java***  
 ```java
@@ -30,7 +30,7 @@ int sum (int[] arr) {
 }
 ```
 
-***Declarative***
+***Declarative***   
 Define what it means to have a sum.  
 ***Haskell***  
 ```haskell
@@ -54,10 +54,9 @@ evaluate arg =
     if z then x else y
 ```
 
-Strict evaluation
-Variables are evaluated immideatly. It means when we call func on an assigment, will hold evaluated value of the func.
-In our scenario, out code will run in 3 hours. Eventhough, we will use only x or y as a return value.  
-***Java***
+***Strict evaluation***  
+Variables are evaluated immediately. It means when we call func on an assignment, will hold the evaluated value of the func. In our scenario, our code will run in 3 hours. Even though, we will use only x or y as a return value.  
+***Java***  
 ```java
 int evaluate(int arg) {
     int x = func1(arg);
