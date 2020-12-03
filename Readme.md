@@ -1,7 +1,7 @@
 # Haskell tutorial for beginners
 ## Prerequisites
  * You can code on one of the imperative programming languages (C, C++, Python, Java, ...)
- * You have installed Haskell Toolchain (ghc, ghci, caabal)
+ * You have installed Haskell Toolchain (ghc, ghci, cabal)
 
 ## Content
 1. [Introduction](#intro)
