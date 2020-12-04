@@ -65,7 +65,7 @@ getSecondTuple :: ( a, b ) -> b
 getSecondTuple ( _, y) = y
 
 -- | addTuples [ (1, 2), (2, 3), (100 , 100) ] => [ 3, 5, 200 ]
-addTuples :: [ Int, Int)] -> [Int]
+addTuples :: [(Int, Int)] -> [Int]
 addTuples xs = [ x + y | ( x, y ) <- xs ]
 
 main :: IO ()
